@@ -2,7 +2,7 @@ Class HolaMundo {
 
  public static void main(String[] args) {
  
-sout("hola mundo")
+systen.out.println("hola mundo")
 
 }
 }
