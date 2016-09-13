@@ -1,4 +1,79 @@
 public class Juan{
-  //clase de prueba
-  //todo
+pago_pesos(22,100,1000,30,10,8);
+    }
+    public static void pago_pesos(int N,double VU, double IVA, int NP, int TP, double VP){
+        if(N > 1000){
+            if(NP > TP){
+                double valor = N*VU*0.6;
+                double valorp = TP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*0.6*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*0.6*IVA/100 + (valor - valorp)));
+                }   
+            }else{
+                double valor = N*VU*0.6;
+                double valorp = NP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*0.6*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*0.6*IVA/100 + (valor - valorp)));
+                }
+            }
+        }else if(N> 100){
+            if(NP > TP){
+                double valor = N*VU*0.85;
+                double valorp = TP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*0.85*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*0.85*IVA/100 + (valor - valorp)));
+                }   
+            }else{
+                double valor = N*VU*0.85;
+                double valorp = NP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*0.85*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*0.85*IVA/100 + (valor - valorp)));
+                }
+            }
+        }else if(N > 5){
+            if(NP > TP){
+                double valor = N*VU*0.98;
+                double valorp = TP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*0.98*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*0.98*IVA/100 + (valor - valorp)));
+                }   
+            }else{
+                double valor = N*VU*0.98;
+                double valorp = NP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*0.98*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*0.98*IVA/100 + (valor - valorp)));
+                }
+            }
+        }else{
+            if(NP > TP){
+                double valor = N*VU;
+                double valorp = TP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*IVA/100 + (valor - valorp)));
+                }   
+            }else{
+                double valor = N*VU;
+                double valorp = NP*VP;
+                if( valorp > valor ){
+                    System.out.println("El valor a pagar es: " + N*VU*IVA/100);
+                }else{
+                    System.out.println("El valor a pagar es: " + (N*VU*IVA/100 + (valor - valorp)));
+                }
+            }
+        }
+    }
 }
