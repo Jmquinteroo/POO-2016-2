@@ -1,8 +1,7 @@
-Class HolaMundo {
+class HolaMundo {
 
  public static void main(String[] args) {
- 
-sout("hola mundo")
-
+     System.out.println("juan");
+     System.out.println("hola mundo");
 }
 }
